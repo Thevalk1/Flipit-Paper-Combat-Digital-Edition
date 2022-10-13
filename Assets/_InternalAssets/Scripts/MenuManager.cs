@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class MenuManager : MonoBehaviour
     private GameObject _armySelectPanel;
 
     [SerializeField]
-    private TExtMeshProUGUI _stateText;
+    private TextMeshProUGUI _stateText;
 
     void Awake()
     {
@@ -20,7 +21,8 @@ public class MenuManager : MonoBehaviour
         GameManager.onGameStateChanged -= GameManagerOnGameStateChanged;
     }
 
-    private void GameManagerOnGameStateChanged(GameState state) { 
+    private void GameManagerOnGameStateChanged(GameState state)
+    {
         _armySelectPanel.SetActive(state == GameState.SelectArmy);
     }
 
