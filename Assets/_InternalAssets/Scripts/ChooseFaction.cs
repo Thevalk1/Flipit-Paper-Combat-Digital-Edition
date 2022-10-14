@@ -2,11 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Faction
+{
+    GreatBritain,
+    Germany
+}
+
 public class ChooseFaction : MonoBehaviour
 {
-    void OnMouseDown()
+    public Faction faction;
+
+    public void onFactionChosen()
     {
-        Debug.Log("clicked");
-        Destroy(this.gameObject);
+        switch (faction)
+        {
+            case Faction.GreatBritain:
+                FactionSelectionManager.Instance.onPlayerFactionChosen(faction);
+                break;
+            case Faction.Germany:
+                FactionSelectionManager.Instance.onPlayerFactionChosen(faction);
+                break;
+        }
     }
 }

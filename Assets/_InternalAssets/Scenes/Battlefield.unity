@@ -145,7 +145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &70209277
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1036,12 +1036,12 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469028529}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 1.0000575, y: 1.0000573, z: 1.0000572}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000576, y: 1.0000573, z: 1.0000572}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 706850994}
-  m_RootOrder: 5
+  m_Father: {fileID: 1828009294}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1145,6 +1145,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469028529}
   m_CullTransparentMesh: 1
+--- !u!1 &475577261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 475577262}
+  m_Layer: 5
+  m_Name: German Selection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &475577262
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475577261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 689358989}
+  - {fileID: 984597226}
+  - {fileID: 1020004631}
+  m_Father: {fileID: 706850994}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &498271832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,18 +1576,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationsPerMinute: 10
---- !u!114 &689358993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689358988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ec72a29f9e694049a7e495646f99f71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &693162520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1724,12 +1751,8 @@ RectTransform:
   - {fileID: 70209277}
   - {fileID: 1034003677}
   - {fileID: 1521186893}
-  - {fileID: 872077679}
-  - {fileID: 469028530}
-  - {fileID: 689358989}
-  - {fileID: 984597226}
-  - {fileID: 1810121014}
-  - {fileID: 1020004631}
+  - {fileID: 1828009294}
+  - {fileID: 475577262}
   m_Father: {fileID: 1199154698}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2333,18 +2356,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationsPerMinute: 10
---- !u!114 &872077683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872077678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ec72a29f9e694049a7e495646f99f71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &911685653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2515,11 +2526,11 @@ RectTransform:
   m_GameObject: {fileID: 984597225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000575, y: 1.0000573, z: 1.0000572}
+  m_LocalScale: {x: 1.0000576, y: 1.0000573, z: 1.0000572}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 706850994}
-  m_RootOrder: 7
+  m_Father: {fileID: 475577262}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2640,6 +2651,7 @@ GameObject:
   - component: {fileID: 1020004634}
   - component: {fileID: 1020004633}
   - component: {fileID: 1020004632}
+  - component: {fileID: 1020004635}
   m_Layer: 5
   m_Name: Choose Germany Button
   m_TagString: Untagged
@@ -2654,14 +2666,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020004630}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1948132902}
-  m_Father: {fileID: 706850994}
-  m_RootOrder: 9
+  m_Father: {fileID: 475577262}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2711,7 +2723,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1020004633}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1020004635}
+        m_TargetAssemblyTypeName: ChooseFaction, Assembly-CSharp
+        m_MethodName: onFactionChosen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1020004633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2750,6 +2774,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020004630}
   m_CullTransparentMesh: 1
+--- !u!114 &1020004635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020004630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec72a29f9e694049a7e495646f99f71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faction: 1
 --- !u!4 &1024979421 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7233355286381660974, guid: 3318a0dcc90627d4394e56a36f632ee6, type: 3}
@@ -3085,6 +3122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  player1Faction: 0
+  player2Faction: 0
 --- !u!4 &1192253352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2384229939999654179, guid: 54d8b5f898d226149905f2836c474e9b, type: 3}
@@ -3105,7 +3144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1199154698}
   m_Layer: 0
-  m_Name: Select Army Overlay
+  m_Name: Select Faction Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3291,7 +3330,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 706850994}
+    m_TransformParent: {fileID: 475577262}
     m_Modifications:
     - target: {fileID: 100632, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_Name
@@ -3407,11 +3446,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 50
+      value: 50.00002
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_LocalScale.y
@@ -3419,7 +3458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 50
+      value: 50.000015
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3431,23 +3470,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4
+      value: 4.0000176
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.20843247
+      value: 0.20843244
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.0000000037252899
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9780368
+      value: 0.97803676
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.000000009080394
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 789396300d039cc4fa674d36eddb10a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4915,7 +4954,7 @@ GameObject:
   - component: {fileID: 1798438369}
   - component: {fileID: 1798438370}
   m_Layer: 0
-  m_Name: Menu Manager
+  m_Name: Faction Selection Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4945,11 +4984,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1798438368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83272d34152aaf5439557df549489af3, type: 3}
+  m_Script: {fileID: 11500000, guid: aa6ab8d18d49ab14b86944ac6152c0b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _armySelectPanel: {fileID: 0}
-  _stateText: {fileID: 0}
+  _factionSelectPanel: {fileID: 706850990}
+  _player1Text: {fileID: 70209276}
+  _player2Text: {fileID: 1034003676}
+  _britishSelection: {fileID: 1828009293}
+  _germanSelection: {fileID: 475577261}
 --- !u!1 &1810121013
 GameObject:
   m_ObjectHideFlags: 0
@@ -4962,6 +5004,7 @@ GameObject:
   - component: {fileID: 1810121017}
   - component: {fileID: 1810121016}
   - component: {fileID: 1810121015}
+  - component: {fileID: 1810121018}
   m_Layer: 5
   m_Name: Choose Britain Button
   m_TagString: Untagged
@@ -4976,14 +5019,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810121013}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.000023163755}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 332081852}
-  m_Father: {fileID: 706850994}
-  m_RootOrder: 8
+  m_Father: {fileID: 1828009294}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5033,7 +5076,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1810121016}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1810121018}
+        m_TargetAssemblyTypeName: ChooseFaction, Assembly-CSharp
+        m_MethodName: onFactionChosen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1810121016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5072,6 +5127,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810121013}
   m_CullTransparentMesh: 1
+--- !u!114 &1810121018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810121013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec72a29f9e694049a7e495646f99f71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faction: 0
+--- !u!1 &1828009293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1828009294}
+  m_Layer: 5
+  m_Name: British Selection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1828009294
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828009293}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 872077679}
+  - {fileID: 469028530}
+  - {fileID: 1810121014}
+  m_Father: {fileID: 706850994}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1845765135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5508,7 +5615,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 706850994}
+    m_TransformParent: {fileID: 1828009294}
     m_Modifications:
     - target: {fileID: 105134, guid: aa05473e4d04e834eb7a29b53251c8cf, type: 3}
       propertyPath: m_Layer
@@ -5624,7 +5731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: aa05473e4d04e834eb7a29b53251c8cf, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: aa05473e4d04e834eb7a29b53251c8cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -5640,7 +5747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: aa05473e4d04e834eb7a29b53251c8cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -118
+      value: -118.00002
       objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: aa05473e4d04e834eb7a29b53251c8cf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5648,7 +5755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: aa05473e4d04e834eb7a29b53251c8cf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4
+      value: 4.0000253
       objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: aa05473e4d04e834eb7a29b53251c8cf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5656,7 +5763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: aa05473e4d04e834eb7a29b53251c8cf, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0000000074505815
+      value: 0.0000000037252903
       objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: aa05473e4d04e834eb7a29b53251c8cf, type: 3}
       propertyPath: m_LocalRotation.y
@@ -5664,7 +5771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: aa05473e4d04e834eb7a29b53251c8cf, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000015832486
+      value: 0.00000003085006
       objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: aa05473e4d04e834eb7a29b53251c8cf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
