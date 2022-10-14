@@ -32,6 +32,9 @@ public class GameManager : MonoBehaviour
     public Faction player1Faction;
     public Faction player2Faction;
 
+    [SerializeField]
+    private GameObject _coinToss;
+
     void Awake()
     {
         Instance = this;
@@ -53,6 +56,7 @@ public class GameManager : MonoBehaviour
             case GameState.Player2SelectArmy:
                 break;
             case GameState.CoinToss:
+                _coinToss.SetActive(true);
                 break;
             case GameState.Player1MovementTurn:
                 break;

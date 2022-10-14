@@ -62,7 +62,6 @@ public class FactionSelectionManager : MonoBehaviour
                         _britishSelection.SetActive(false);
                         break;
                 }
-
                 break;
         }
     }
