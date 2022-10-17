@@ -12,31 +12,21 @@ public class CoinBehavior : MonoBehaviour
 
     private float speed;
     private bool tossedCoin = false;
-    private Player result;
-
-    void Start()
-    {
-        TossCoin();
-    }
-
-    void Update()
-    {
-        if (tossedCoin)
-        {
-            StartCoroutine(GetResult());
-        }
-    }
+    public Player result;
 
     public void TossCoin()
     {
-        resultText.text = "";
-        tossedCoin = true;
+        if (tossedCoin == false)
+        {
+            tossedCoin = true;
+            resultText.text = "";
 
-        int jumpForce = Random.Range(50, 100);
-        rb.AddForce(0, jumpForce, 10);
-        int torqx = Random.Range(50, 100);
-        int torqy = Random.Range(50, 100);
-        rb.AddTorque(torqx, 0, torqy);
+            int jumpForce = Random.Range(70, 100);
+            rb.AddForce(0, jumpForce, 10);
+            int torqx = Random.Range(70, 100);
+            int torqy = Random.Range(70, 100);
+            rb.AddTorque(torqx, 0, torqy);
+        }
     }
 
     private IEnumerator GetResult()
@@ -49,16 +39,17 @@ public class CoinBehavior : MonoBehaviour
         rb.velocity = Vector3.zero;
 
         tossedCoin = false;
-
-        DisplayResult();
+        StartCoroutine(DisplayResult());
     }
 
     public void SaveResult(Player player)
     {
         result = player;
+
+        StartCoroutine(GetResult());
     }
 
-    private void DisplayResult()
+    private IEnumerator DisplayResult()
     {
         switch (result)
         {
@@ -70,6 +61,12 @@ public class CoinBehavior : MonoBehaviour
                 break;
         }
 
-        
+        yield return new WaitForSeconds(2);
+
+        resultText.text = "";
+
+        yield return new WaitForSeconds(1);
+
+        GameManager.Instance.StartNewTurn(result);
     }
 }

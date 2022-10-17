@@ -19,7 +19,8 @@ public class MainMenu : MonoBehaviour
         audio.volume = 0;
         audio.Stop();
 
-        SceneManager.LoadScene("Battlefield");    }
+        SceneManager.LoadScene("Battlefield");
+    }
 
     public void StartGame()
     {
