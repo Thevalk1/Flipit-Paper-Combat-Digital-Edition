@@ -2,27 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CoinBehavior : MonoBehaviour
 {
     public GameObject coin;
     public Rigidbody rb;
+    public TextMeshProUGUI resultText;
 
     private float speed;
     private bool tossedCoin = false;
+    private Player result;
 
-    void Start() {
+    void Start()
+    {
         TossCoin();
     }
 
-    void Update () {
-        if (tossedCoin) {
+    void Update()
+    {
+        if (tossedCoin)
+        {
             StartCoroutine(GetResult());
         }
     }
 
     public void TossCoin()
     {
+        resultText.text = "";
         tossedCoin = true;
 
         int jumpForce = Random.Range(50, 100);
@@ -43,8 +50,26 @@ public class CoinBehavior : MonoBehaviour
 
         tossedCoin = false;
 
-        Debug.Log("Need to get face up value now");
+        DisplayResult();
+    }
 
-        // TODO: Proceed to movement phase after getting winner in coin toss
+    public void SaveResult(Player player)
+    {
+        result = player;
+    }
+
+    private void DisplayResult()
+    {
+        switch (result)
+        {
+            case Player.Player1:
+                resultText.text = "Player 1 Goes First!";
+                break;
+            case Player.Player2:
+                resultText.text = "Player 2 Goes First!";
+                break;
+        }
+
+        
     }
 }
