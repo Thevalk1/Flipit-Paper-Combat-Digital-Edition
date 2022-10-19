@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public enum GameState
 {
@@ -45,15 +44,6 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject _germanyCamera;
 
-    [SerializeField]
-    private GameObject _mainUI;
-
-    [SerializeField]
-    private TextMeshProUGUI _currentPlayer;
-
-    [SerializeField]
-    private TextMeshProUGUI _currentPhase;
-
     private Player coinTossWinner;
 
     void Awake()
@@ -79,34 +69,21 @@ public class GameManager : MonoBehaviour
                 _coinToss.SetActive(false);
                 break;
             case GameState.CoinToss:
-                _currentPlayer.text = ""; // TODO: Move to Main UI Manager
-                _currentPhase.text = "";
                 _coinToss.SetActive(true);
                 _coinBehavior.TossCoin();
-                _mainUI.SetActive(false);
                 break;
             case GameState.Player1MovementTurn:
-                _currentPlayer.text = "Player 1"; // TODO: Move to Main UI Manager
-                _currentPhase.text = "Movement Turn";
                 _coinToss.SetActive(false);
-                _mainUI.SetActive(true);
                 UpdateCamera(Player.Player1);
                 break;
             case GameState.Player2MovementTurn:
-                _currentPlayer.text = "Player 2"; // TODO: Move to Main UI Manager
-                _currentPhase.text = "Movement Turn";
                 _coinToss.SetActive(false);
-                _mainUI.SetActive(true);
                 UpdateCamera(Player.Player2);
                 break;
             case GameState.Player1ShootingTurn:
-                _currentPlayer.text = "Player 1"; // TODO: Move to Main UI Manager
-                _currentPhase.text = "Shooting Turn";
                 UpdateCamera(Player.Player1);
                 break;
             case GameState.Player2ShootingTurn:
-                _currentPlayer.text = "Player 2"; // TODO: Move to Main UI Manager
-                _currentPhase.text = "Shooting Turn";
                 UpdateCamera(Player.Player2);
                 break;
             case GameState.GameOver:
