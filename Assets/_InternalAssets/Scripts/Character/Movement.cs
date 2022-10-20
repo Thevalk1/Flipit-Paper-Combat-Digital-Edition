@@ -47,13 +47,16 @@ public class Movement : MonoBehaviour
     {
         if (GameObject.ReferenceEquals(gameObject, GameManager.Instance._character))
         {
-            Rotate();
-            Move();
-
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (GameManager.Instance.State == GameState.CharacterMovement)
             {
-                FinishMovement();
+                Move();
+                
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    FinishMovement();
+                }
             }
+            Rotate();
         }
     }
 
