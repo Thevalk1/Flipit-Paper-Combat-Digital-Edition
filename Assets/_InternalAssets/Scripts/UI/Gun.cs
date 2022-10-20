@@ -22,9 +22,9 @@ public class Gun : MonoBehaviour
  
     public GameObject shootPoint;
  
-    //public AudioSource gunshot;
+    public AudioSource gunshot;
  
-    //public AudioClip singleShot;
+    public AudioClip singleShot;
  
     // Start is called before the first frame update
     void Start()
@@ -39,7 +39,7 @@ public class Gun : MonoBehaviour
  
         if (Input.GetButton("Fire1"))
         {
-            accuracy += Time.deltaTime * 4f;
+            accuracy += Time.deltaTime * 2f;
             if (cooldownSpeed >= fireRate)
             {
                 Shoot();
