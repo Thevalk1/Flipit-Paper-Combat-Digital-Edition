@@ -104,6 +104,9 @@ public class GameManager : MonoBehaviour
                 currentPlayer = Player.Player2;
                 UpdateTurnCamera(Player.Player2);
                 break;
+            case GameState.CharacterShooting:
+                UpdateCharacterCamera();
+                break;
             case GameState.GameOver:
                 break;
         }
@@ -190,10 +193,17 @@ public class GameManager : MonoBehaviour
         if (_character)
         {
             GameObject characterCamera = _character.transform.Find("Camera").gameObject;
+
             GameObject movementUI = _character.transform
                 .Find("Character UI/Movement UI")
                 .gameObject;
             movementUI.SetActive(false);
+
+            GameObject shootingUI = _character.transform
+                .Find("Character UI/Shooting UI")
+                .gameObject;
+            shootingUI.SetActive(false);
+
             characterCamera.SetActive(false);
 
             _character = null;
@@ -233,8 +243,22 @@ public class GameManager : MonoBehaviour
         _britainCamera.SetActive(false);
 
         GameObject characterCamera = _character.transform.Find("Camera").gameObject;
-        GameObject movementUI = _character.transform.Find("Character UI/Movement UI").gameObject;
-        movementUI.SetActive(true);
+
+        if (State == GameState.CharacterMovement)
+        {
+            GameObject movementUI = _character.transform
+                .Find("Character UI/Movement UI")
+                .gameObject;
+            movementUI.SetActive(true);
+        }
+        else if (State == GameState.CharacterShooting)
+        {
+            GameObject shootingUI = _character.transform
+                .Find("Character UI/Shooting UI")
+                .gameObject;
+            shootingUI.SetActive(true);
+        }
+
         characterCamera.SetActive(true);
     }
 
@@ -242,6 +266,12 @@ public class GameManager : MonoBehaviour
     {
         _character = character;
         UpdateGameState(GameState.CharacterMovement);
+    }
+
+    public void StartCharacterShooting(GameObject character)
+    {
+        _character = character;
+        UpdateGameState(GameState.CharacterShooting);
     }
 
     public void FinishCharacterMovement()
@@ -253,6 +283,18 @@ public class GameManager : MonoBehaviour
         else if (currentPlayer == Player.Player2)
         {
             UpdateGameState(GameState.Player2MovementTurn);
+        }
+    }
+
+    public void FinishCharacterShooting()
+    {
+        if (currentPlayer == Player.Player1)
+        {
+            UpdateGameState(GameState.Player1ShootingTurn);
+        }
+        else if (currentPlayer == Player.Player2)
+        {
+            UpdateGameState(GameState.Player2ShootingTurn);
         }
     }
 }
