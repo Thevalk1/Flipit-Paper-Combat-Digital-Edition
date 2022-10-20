@@ -10,8 +10,10 @@ public enum GameState
     CoinToss,
     Player1MovementTurn,
     Player2MovementTurn,
+    CharacterMovement,
     Player1ShootingTurn,
     Player2ShootingTurn,
+    CharacterShooting,
     GameOver,
 }
 
@@ -44,7 +46,16 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject _germanyCamera;
 
+    public GameObject _character;
+
+    [SerializeField]
+    private GameObject _britishSoldiers;
+
+    [SerializeField]
+    private GameObject _germanSoldiers;
+
     private Player coinTossWinner;
+    public Player currentPlayer;
 
     void Awake()
     {
@@ -74,17 +85,24 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Player1MovementTurn:
                 _coinToss.SetActive(false);
-                UpdateCamera(Player.Player1);
+                currentPlayer = Player.Player1;
+                UpdateTurnCamera(Player.Player1);
                 break;
             case GameState.Player2MovementTurn:
                 _coinToss.SetActive(false);
-                UpdateCamera(Player.Player2);
+                currentPlayer = Player.Player2;
+                UpdateTurnCamera(Player.Player2);
+                break;
+            case GameState.CharacterMovement:
+                UpdateCharacterCamera();
                 break;
             case GameState.Player1ShootingTurn:
-                UpdateCamera(Player.Player1);
+                currentPlayer = Player.Player1;
+                UpdateTurnCamera(Player.Player1);
                 break;
             case GameState.Player2ShootingTurn:
-                UpdateCamera(Player.Player2);
+                currentPlayer = Player.Player2;
+                UpdateTurnCamera(Player.Player2);
                 break;
             case GameState.GameOver:
                 break;
@@ -167,8 +185,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void UpdateCamera(Player player)
+    private void UpdateTurnCamera(Player player)
     {
+        if (_character)
+        {
+            GameObject characterCamera = _character.transform.Find("Camera").gameObject;
+            GameObject movementUI = _character.transform
+                .Find("Character UI/Movement UI")
+                .gameObject;
+            movementUI.SetActive(false);
+            characterCamera.SetActive(false);
+
+            _character = null;
+        }
+
         if (player == Player.Player1)
         {
             if (player1Faction == Faction.GreatBritain)
@@ -194,6 +224,35 @@ public class GameManager : MonoBehaviour
                 _germanyCamera.SetActive(true);
                 _britainCamera.SetActive(false);
             }
+        }
+    }
+
+    private void UpdateCharacterCamera()
+    {
+        _germanyCamera.SetActive(false);
+        _britainCamera.SetActive(false);
+
+        GameObject characterCamera = _character.transform.Find("Camera").gameObject;
+        GameObject movementUI = _character.transform.Find("Character UI/Movement UI").gameObject;
+        movementUI.SetActive(true);
+        characterCamera.SetActive(true);
+    }
+
+    public void StartCharacterMovement(GameObject character)
+    {
+        _character = character;
+        UpdateGameState(GameState.CharacterMovement);
+    }
+
+    public void FinishCharacterMovement()
+    {
+        if (currentPlayer == Player.Player1)
+        {
+            UpdateGameState(GameState.Player1MovementTurn);
+        }
+        else if (currentPlayer == Player.Player2)
+        {
+            UpdateGameState(GameState.Player2MovementTurn);
         }
     }
 }
