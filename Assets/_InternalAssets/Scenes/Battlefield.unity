@@ -666,6 +666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: British_Soldier (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 132888, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: m_TagString
+      value: Soldier
+      objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2386,6 +2390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: German_Soldier (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100632, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: m_TagString
+      value: Soldier
+      objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3702,6 +3710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: British_Soldier (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 132888, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: m_TagString
+      value: Soldier
+      objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3830,6 +3842,10 @@ PrefabInstance:
     - target: {fileID: 132888, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_Name
       value: British_Soldier (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 132888, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: m_TagString
+      value: Soldier
       objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_RootOrder
@@ -4431,6 +4447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: German_Soldier (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100632, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: m_TagString
+      value: Soldier
+      objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4818,7 +4838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 448a48ca59428a8409593e4cdc5d6cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 0
+  State: 8
   player1Faction: 0
   player2Faction: 0
   _coinToss: {fileID: 1146248274}
@@ -5510,6 +5530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: British_Soldier (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 132888, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: m_TagString
+      value: Soldier
+      objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5612,6 +5636,10 @@ PrefabInstance:
     - target: {fileID: 100632, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: m_Name
       value: German_Soldier (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100632, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: m_TagString
+      value: Soldier
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: m_RootOrder
@@ -6493,6 +6521,10 @@ PrefabInstance:
     - target: {fileID: 100632, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: m_Name
       value: German_Soldier (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100632, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: m_TagString
+      value: Soldier
       objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: m_RootOrder
@@ -8390,6 +8422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: German_Soldier
       objectReference: {fileID: 0}
+    - target: {fileID: 100632, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: m_TagString
+      value: Soldier
+      objectReference: {fileID: 0}
     - target: {fileID: 403684, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8467,6 +8503,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: British_Soldier
       objectReference: {fileID: 0}
+    - target: {fileID: 132888, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: m_TagString
+      value: Soldier
+      objectReference: {fileID: 0}
     - target: {fileID: 403460, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8539,12 +8579,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4366743349561675430, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 8177937685416165913, guid: d8ffc069ac9325c49a1dd23b5aeed90b, type: 3}
     - target: {fileID: 7813969811194855003, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7991300465706677051, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284453651569206113, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

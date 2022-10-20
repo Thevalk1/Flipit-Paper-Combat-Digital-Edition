@@ -102,14 +102,9 @@ public class ShootRifle : MonoBehaviour
 
         //Find the exact hit position using a raycast
         Ray ray = fpsCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); //Just a ray through the middle of your current view
-        RaycastHit hit;
 
         //check if ray hits something
-        Vector3 targetPoint;
-        if (Physics.Raycast(ray, out hit))
-            targetPoint = hit.point;
-        else
-            targetPoint = ray.GetPoint(75); //Just a point far away from the player
+        Vector3 targetPoint = ray.GetPoint(75); //Just a point far away from the player
 
         //Calculate direction from attackPoint to targetPoint
         Vector3 directionWithoutSpread = targetPoint - attackPoint.position;
