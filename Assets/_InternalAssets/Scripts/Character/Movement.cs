@@ -38,7 +38,10 @@ public class Movement : MonoBehaviour
         switch (state)
         {
             case GameState.CoinToss:
-                ResetMovementPoints();
+                if (this)
+                {
+                    ResetMovementPoints();
+                }
                 break;
         }
     }
@@ -50,7 +53,7 @@ public class Movement : MonoBehaviour
             if (GameManager.Instance.State == GameState.CharacterMovement)
             {
                 Move();
-                
+
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
                     FinishMovement();

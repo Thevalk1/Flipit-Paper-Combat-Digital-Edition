@@ -53,12 +53,20 @@ public class ShootRifle : MonoBehaviour
         readyToShoot = true;
     }
 
+    void onDestroy()
+    {
+        GameManager.onGameStateChanged -= GameManagerOnGameStateChanged;
+    }
+
     private void GameManagerOnGameStateChanged(GameState state)
     {
         switch (state)
         {
             case GameState.CoinToss:
-                Reload();
+                if (this)
+                {
+                    Reload();
+                }
                 break;
         }
     }

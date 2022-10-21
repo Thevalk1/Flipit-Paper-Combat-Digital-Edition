@@ -371,5 +371,7 @@ public class GameManager : MonoBehaviour
                 _winnerText.SetText("Player 2 Wins!");
                 break;
         }
+
+        UpdateGameState(GameState.GameOver);
     }
 }
