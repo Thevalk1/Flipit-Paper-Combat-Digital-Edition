@@ -97,7 +97,7 @@ MonoBehaviour:
   animator: {fileID: 9531452}
   speed: 3
   movementBar: {fileID: 2489655736777057901}
-  movementBarAmount: 1000
+  movementBarAmount: 500
   cameraHolder: {fileID: 6489860999200790996}
   mouseSensitivity: 2
   upLimit: -20
