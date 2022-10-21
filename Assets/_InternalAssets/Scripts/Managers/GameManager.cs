@@ -49,11 +49,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject _character;
 
-    [SerializeField]
-    private GameObject _britishSoldiers;
+    public int britishSoldiersLeft = 5;
 
-    [SerializeField]
-    private GameObject _germanSoldiers;
+    public int germanSoldiersLeft = 5;
 
     private Player coinTossWinner;
     public Player currentPlayer;
@@ -323,10 +321,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void GameOverCheck()
+    public void KillSoldier(Faction faction)
     {
-        int britishSoldiersLeft = _britishSoldiers.transform.childCount - 1;
-        int germanSoldiersLeft = _germanSoldiers.transform.childCount - 1;
+        switch (faction)
+        {
+            case Faction.Germany:
+                germanSoldiersLeft--;
+                break;
+            case Faction.GreatBritain:
+                britishSoldiersLeft--;
+                break;
+        }
+
+        Debug.Log("germanSoldiersLeft " + germanSoldiersLeft);
+        Debug.Log("britishSoldiersLeft " + britishSoldiersLeft);
 
         if (britishSoldiersLeft == 0)
         {

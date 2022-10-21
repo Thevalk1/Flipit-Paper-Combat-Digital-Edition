@@ -5,6 +5,7 @@ using UnityEngine;
 public class OnHit : MonoBehaviour
 {
     public Animator animator;
+    public Faction faction;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -18,9 +19,8 @@ public class OnHit : MonoBehaviour
     IEnumerator Die()
     {
         animator.SetBool("Dead", true);
+        GameManager.Instance.KillSoldier(faction);
         yield return new WaitForSeconds(3);
         Destroy(gameObject);
-
-        GameManager.Instance.GameOverCheck();
     }
 }
