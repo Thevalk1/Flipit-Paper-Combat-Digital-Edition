@@ -510,13 +510,13 @@ MonoBehaviour:
   timeBetweenShooting: 0
   spread: 5
   reloadTime: 0
-  timeBetweenShots: 0
+  timeBetweenShots: 50
   magazineSize: 5
   bulletsPerTap: 1
   allowButtonHold: 0
   fpsCam: {fileID: 1012477446091782964}
   attackPoint: {fileID: 2661718980066112607}
-  muzzleFlash: {fileID: 0}
+  muzzleFlash: {fileID: 100000, guid: 1ff8eab8cf919d84a89daaf483ce7179, type: 3}
   ammunitionDisplay: {fileID: 5116058524589179021}
   gunshot: {fileID: 9065595314904283770}
   singleShot: {fileID: 8300000, guid: fc8b185f8a5e9394da045190f168f95f, type: 3}
