@@ -47,9 +47,20 @@ public class ShootRifle : MonoBehaviour
 
     private void Awake()
     {
+        GameManager.onGameStateChanged += GameManagerOnGameStateChanged;
         //make sure magazine is full
         bulletsLeft = magazineSize;
         readyToShoot = true;
+    }
+
+    private void GameManagerOnGameStateChanged(GameState state)
+    {
+        switch (state)
+        {
+            case GameState.CoinToss:
+                Reload();
+                break;
+        }
     }
 
     private void Update()
