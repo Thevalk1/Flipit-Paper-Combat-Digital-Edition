@@ -20,5 +20,7 @@ public class OnHit : MonoBehaviour
         animator.SetBool("Dead", true);
         yield return new WaitForSeconds(3);
         Destroy(gameObject);
+
+        GameManager.Instance.GameOverCheck();
     }
 }

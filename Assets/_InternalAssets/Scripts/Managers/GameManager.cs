@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public enum GameState
 {
@@ -57,6 +58,15 @@ public class GameManager : MonoBehaviour
     private Player coinTossWinner;
     public Player currentPlayer;
 
+    [SerializeField]
+    private GameObject _mainUI;
+
+    [SerializeField]
+    private GameObject _gameOverUI;
+
+    [SerializeField]
+    private TextMeshProUGUI _winnerText;
+
     void Awake()
     {
         Instance = this;
@@ -74,40 +84,55 @@ public class GameManager : MonoBehaviour
         switch (newState)
         {
             case GameState.Player1SelectArmy:
+                Cursor.visible = true;
                 _coinToss.SetActive(false);
                 break;
             case GameState.Player2SelectArmy:
+                Cursor.visible = true;
                 _coinToss.SetActive(false);
                 break;
             case GameState.CoinToss:
+                Cursor.visible = true;
+                _mainUI.SetActive(false);
                 _coinToss.SetActive(true);
                 _coinBehavior.TossCoin();
                 break;
             case GameState.Player1MovementTurn:
+                Cursor.visible = true;
+                _mainUI.SetActive(true);
                 _coinToss.SetActive(false);
                 currentPlayer = Player.Player1;
                 UpdateTurnCamera(Player.Player1);
                 break;
             case GameState.Player2MovementTurn:
+                Cursor.visible = true;
+                _mainUI.SetActive(true);
                 _coinToss.SetActive(false);
                 currentPlayer = Player.Player2;
                 UpdateTurnCamera(Player.Player2);
                 break;
             case GameState.CharacterMovement:
+                Cursor.visible = false;
                 UpdateCharacterCamera();
                 break;
             case GameState.Player1ShootingTurn:
+                Cursor.visible = true;
+                _mainUI.SetActive(true);
                 currentPlayer = Player.Player1;
                 UpdateTurnCamera(Player.Player1);
                 break;
             case GameState.Player2ShootingTurn:
+                Cursor.visible = true;
+                _mainUI.SetActive(true);
                 currentPlayer = Player.Player2;
                 UpdateTurnCamera(Player.Player2);
                 break;
             case GameState.CharacterShooting:
+                Cursor.visible = false;
                 UpdateCharacterCamera();
                 break;
             case GameState.GameOver:
+                Cursor.visible = true;
                 break;
         }
 
@@ -295,6 +320,56 @@ public class GameManager : MonoBehaviour
         else if (currentPlayer == Player.Player2)
         {
             UpdateGameState(GameState.Player2ShootingTurn);
+        }
+    }
+
+    public void GameOverCheck()
+    {
+        int britishSoldiersLeft = _britishSoldiers.transform.childCount - 1;
+        int germanSoldiersLeft = _germanSoldiers.transform.childCount - 1;
+
+        if (britishSoldiersLeft == 0)
+        {
+            if (player1Faction == Faction.GreatBritain)
+            {
+                GameOver(Player.Player2);
+            }
+            else
+            {
+                GameOver(Player.Player1);
+            }
+        }
+        else if (germanSoldiersLeft == 0)
+        {
+            if (player1Faction == Faction.Germany)
+            {
+                GameOver(Player.Player2);
+            }
+            else
+            {
+                GameOver(Player.Player1);
+            }
+        }
+    }
+
+    private void GameOver(Player winner)
+    {
+        GameObject movementUI = _character.transform.Find("Character UI/Movement UI").gameObject;
+        movementUI.SetActive(false);
+
+        GameObject shootingUI = _character.transform.Find("Character UI/Shooting UI").gameObject;
+        shootingUI.SetActive(false);
+
+        _gameOverUI.SetActive(true);
+
+        switch (winner)
+        {
+            case Player.Player1:
+                _winnerText.SetText("Player 1 Wins!");
+                break;
+            case Player.Player2:
+                _winnerText.SetText("Player 2 Wins!");
+                break;
         }
     }
 }
