@@ -6,6 +6,7 @@ public class OnHit : MonoBehaviour
 {
     public Animator animator;
     public Faction faction;
+    public AudioClip soundEffect;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -20,6 +21,7 @@ public class OnHit : MonoBehaviour
     {
         animator.SetBool("Dead", true);
         GameManager.Instance.KillSoldier(faction);
+        AudioSource.PlayClipAtPoint(soundEffect, new Vector3(5,1,2));
         yield return new WaitForSeconds(3);
         Destroy(gameObject);
     }
