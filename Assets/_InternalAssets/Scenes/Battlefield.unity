@@ -2310,7 +2310,7 @@ PrefabInstance:
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 1ff8eab8cf919d84a89daaf483ce7179, type: 3}
+      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: timeBetweenShots
       value: 100
@@ -5942,7 +5942,7 @@ PrefabInstance:
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 1ff8eab8cf919d84a89daaf483ce7179, type: 3}
+      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: timeBetweenShots
       value: 100
@@ -9395,7 +9395,7 @@ PrefabInstance:
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 1ff8eab8cf919d84a89daaf483ce7179, type: 3}
+      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: timeBetweenShots
       value: 100
@@ -9737,7 +9737,7 @@ PrefabInstance:
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 1ff8eab8cf919d84a89daaf483ce7179, type: 3}
+      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: timeBetweenShots
       value: 100
@@ -10762,7 +10762,7 @@ PrefabInstance:
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 1ff8eab8cf919d84a89daaf483ce7179, type: 3}
+      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: timeBetweenShots
       value: 100
@@ -13795,7 +13795,7 @@ PrefabInstance:
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 1ff8eab8cf919d84a89daaf483ce7179, type: 3}
+      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: timeBetweenShots
       value: 100
@@ -14552,7 +14552,7 @@ PrefabInstance:
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 1ff8eab8cf919d84a89daaf483ce7179, type: 3}
+      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: timeBetweenShots
       value: 100
@@ -17169,7 +17169,7 @@ PrefabInstance:
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 1ff8eab8cf919d84a89daaf483ce7179, type: 3}
+      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: timeBetweenShots
       value: 100
@@ -21946,7 +21946,7 @@ PrefabInstance:
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 1ff8eab8cf919d84a89daaf483ce7179, type: 3}
+      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: timeBetweenShots
       value: 100
@@ -22055,7 +22055,7 @@ PrefabInstance:
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 1ff8eab8cf919d84a89daaf483ce7179, type: 3}
+      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: timeBetweenShots
       value: 100
