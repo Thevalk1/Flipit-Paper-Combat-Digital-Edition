@@ -2280,6 +2280,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
     - target: {fileID: 7813969811194855003, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5783,6 +5787,10 @@ PrefabInstance:
       propertyPath: faction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
 --- !u!1001 &588987967
@@ -9056,6 +9064,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
     - target: {fileID: 7813969811194855003, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -9375,6 +9387,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
     - target: {fileID: 7813969811194855003, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10367,6 +10383,10 @@ PrefabInstance:
       propertyPath: faction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
 --- !u!1001 &1064728118
@@ -12970,6 +12990,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
     - target: {fileID: 7813969811194855003, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -13689,6 +13713,10 @@ PrefabInstance:
       propertyPath: faction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
 --- !u!1001 &1408978481
@@ -16258,6 +16286,10 @@ PrefabInstance:
       propertyPath: faction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
 --- !u!1001 &1643516441
@@ -20834,6 +20866,10 @@ PrefabInstance:
       propertyPath: faction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
 --- !u!1001 &2086652982
@@ -20927,6 +20963,10 @@ PrefabInstance:
       propertyPath: bullet
       value: 
       objectReference: {fileID: 8177937685416165913, guid: d8ffc069ac9325c49a1dd23b5aeed90b, type: 3}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
     - target: {fileID: 7813969811194855003, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
