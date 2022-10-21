@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4627204, g: 0.43277863, b: 0.36400205, a: 1}
+  m_IndirectSpecularColor: {r: 0.4617263, g: 0.4317771, b: 0.3634302, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2293,7 +2293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: movementBarAmount
-      value: 1000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1349313651748632784, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_IsActive
@@ -5907,6 +5907,10 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: faction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3045836063080116142, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
@@ -9342,7 +9346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: movementBarAmount
-      value: 1000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1349313651748632784, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_IsActive
@@ -9668,7 +9672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: movementBarAmount
-      value: 1000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1349313651748632784, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_IsActive
@@ -10674,6 +10678,10 @@ PrefabInstance:
     - target: {fileID: 9531452, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: faction
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3045836063080116142, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
@@ -11873,8 +11881,8 @@ MonoBehaviour:
   _britainCamera: {fileID: 1710392696}
   _germanyCamera: {fileID: 378673974}
   _character: {fileID: 180956891}
-  _britishSoldiers: {fileID: 451877839}
-  _germanSoldiers: {fileID: 931652249}
+  britishSoldiersLeft: 5
+  germanSoldiersLeft: 5
   currentPlayer: 0
   _mainUI: {fileID: 2069783986}
   _gameOverUI: {fileID: 1069548962}
@@ -13690,7 +13698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: movementBarAmount
-      value: 1000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1349313651748632784, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_IsActive
@@ -14428,6 +14436,10 @@ PrefabInstance:
     - target: {fileID: 9531452, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: faction
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3045836063080116142, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
@@ -17025,6 +17037,10 @@ PrefabInstance:
     - target: {fileID: 9531452, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: faction
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3045836063080116142, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
@@ -21783,6 +21799,10 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: faction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3045836063080116142, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
@@ -21870,7 +21890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: movementBarAmount
-      value: 1000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1349313651748632784, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_IsActive
