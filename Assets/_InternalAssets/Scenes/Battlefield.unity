@@ -2292,6 +2292,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: movementBarAmount
       value: 500
       objectReference: {fileID: 0}
@@ -2306,7 +2310,19 @@ PrefabInstance:
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: timeBetweenShots
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: timeBetweenShooting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101518418704988966, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bd8c98cb116b4a45b2f4c8c1e1ce220, type: 3}
     - target: {fileID: 7813969811194855003, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5907,10 +5923,18 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1374468249941796803, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bd8c98cb116b4a45b2f4c8c1e1ce220, type: 3}
     - target: {fileID: 3045836063080116142, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
@@ -5918,7 +5942,15 @@ PrefabInstance:
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: timeBetweenShots
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: timeBetweenShooting
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
 --- !u!1001 &588987967
@@ -9345,6 +9377,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: movementBarAmount
       value: 500
       objectReference: {fileID: 0}
@@ -9359,7 +9395,19 @@ PrefabInstance:
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: timeBetweenShots
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: timeBetweenShooting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101518418704988966, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bd8c98cb116b4a45b2f4c8c1e1ce220, type: 3}
     - target: {fileID: 7813969811194855003, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -9671,6 +9719,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: movementBarAmount
       value: 500
       objectReference: {fileID: 0}
@@ -9685,7 +9737,19 @@ PrefabInstance:
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: timeBetweenShots
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: timeBetweenShooting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101518418704988966, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bd8c98cb116b4a45b2f4c8c1e1ce220, type: 3}
     - target: {fileID: 7813969811194855003, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10679,10 +10743,18 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1374468249941796803, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bd8c98cb116b4a45b2f4c8c1e1ce220, type: 3}
     - target: {fileID: 3045836063080116142, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
@@ -10690,7 +10762,15 @@ PrefabInstance:
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: timeBetweenShots
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: timeBetweenShooting
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
 --- !u!1001 &1064728118
@@ -13697,6 +13777,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: movementBarAmount
       value: 500
       objectReference: {fileID: 0}
@@ -13711,7 +13795,19 @@ PrefabInstance:
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: timeBetweenShots
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: timeBetweenShooting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101518418704988966, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bd8c98cb116b4a45b2f4c8c1e1ce220, type: 3}
     - target: {fileID: 7813969811194855003, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -14437,10 +14533,18 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1374468249941796803, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bd8c98cb116b4a45b2f4c8c1e1ce220, type: 3}
     - target: {fileID: 3045836063080116142, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
@@ -14448,7 +14552,15 @@ PrefabInstance:
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: timeBetweenShots
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: timeBetweenShooting
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
 --- !u!1001 &1408978481
@@ -17038,10 +17150,18 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1374468249941796803, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bd8c98cb116b4a45b2f4c8c1e1ce220, type: 3}
     - target: {fileID: 3045836063080116142, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
@@ -17049,7 +17169,15 @@ PrefabInstance:
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: timeBetweenShots
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: timeBetweenShooting
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
 --- !u!1001 &1643516441
@@ -21799,10 +21927,18 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1374468249941796803, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2530006572765828062, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bd8c98cb116b4a45b2f4c8c1e1ce220, type: 3}
     - target: {fileID: 3045836063080116142, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: faction
       value: 1
@@ -21810,7 +21946,15 @@ PrefabInstance:
     - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: timeBetweenShots
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058493499656517843, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
+      propertyPath: timeBetweenShooting
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6882a6e21bbe87d4e8be917a454bc445, type: 3}
 --- !u!1001 &2086652982
@@ -21889,6 +22033,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189804042897173963, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: movementBarAmount
       value: 500
       objectReference: {fileID: 0}
@@ -21907,7 +22055,19 @@ PrefabInstance:
     - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 100000, guid: 444a7eb933b6b29409065633db2be8f0, type: 3}
+      objectReference: {fileID: 100000, guid: 4560e456c4ec0d3418fffd368dd1e7ff, type: 3}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: timeBetweenShots
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641475553438276255, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: timeBetweenShooting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101518418704988966, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bd8c98cb116b4a45b2f4c8c1e1ce220, type: 3}
     - target: {fileID: 7813969811194855003, guid: 85be99a3977fbec41b730d6a2ebeb175, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -22351,7 +22511,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
